@@ -19,6 +19,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/register', function () {
+    return view('form');
+});
+Route::get('/admin', function () {
+    return view('admin/dashboard');
+});
 //Simple Routes
 Route::get("/page1", function () {
     return response('<h1>my first page</h1>');
